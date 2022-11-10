@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#030A10"
+        tools:context=".ui.login.LoginActivity">
+
+        <ImageView
+            android:id="@+id/loginLogoFood"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_baseline_food_bank_24"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="0.25" />
+
+        <TextView
+            android:id="@+id/loginNameApp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Food Tour"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginLogoFood"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <TextView
+            android:id="@+id/loginTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Special and Delicious Food"
+            android:textColor="#8A8787"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginNameApp"
+            app:layout_constraintWidth_percent="0.5" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginButton"
+            android:background="@drawable/button_login_selector_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="150dp"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textColor="@color/button_login_color"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginTitle"
+            app:layout_constraintWidth_percent="0.4" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/singUpButton"
+            android:textColor="@color/button_singup_color"
+            android:background="@drawable/button_singup_selector_style"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:text="Sing Up"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/loginButton"
+            app:layout_constraintWidth_percent="0.4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

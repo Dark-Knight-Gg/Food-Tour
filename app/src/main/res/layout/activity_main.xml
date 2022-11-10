@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<data>
+    <import type="com.example.foodtour2.MainViewModel"/>
+    <variable
+        name="mainViewModel"
+        type="MainViewModel" />
+</data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#051019"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/generalTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:gravity="center"
+            android:text="Wellcom to Food Tour!"
+            android:textColor="#FBFBFB"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/generalButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:background="@drawable/button_login_selector_style"
+            android:text="Go!"
+            android:textAllCaps="false"
+            android:textColor="@color/button_login_color"
+            android:textSize="25sp"
+            android:onClick="@{()-> mainViewModel.onClickGo()}"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/generalTitle"
+            app:layout_constraintWidth_percent="0.5" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
